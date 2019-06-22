@@ -88,22 +88,27 @@ video {
   border: 0;
   font-size: 62.5%;
   font: inherit;
+  font-family: cursive;
 }
 body {
   background-color: lightblue;
+}
+h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0 0 15px 0;
 }
 .nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
   width: 100%;
   background-color: lightgrey;
-  border: 1px solid black;
-  font-size: 1.7rem;
+  border-bottom: 1px solid black;
+  font-size: 1.55rem;
   font-weight: bold;
-  position: inherit;
 }
 .nav .dropdown {
   z-index: 2;
@@ -116,7 +121,7 @@ body {
 .nav .dropdown .dropdown-items {
   display: flex;
   flex-flow: column;
-  justify-content: auto;
+  justify-content: center;
   align-items: center;
   z-index: 2;
   text-decoration: none;
@@ -128,26 +133,26 @@ body {
   text-decoration: none;
   color: #2bc1ee;
   border: 1px solid black;
-  width: 90px;
+  width: 70px;
   height: 32px;
   font-size: 1.3rem;
   margin: 2px 0 0 20px;
-  padding: 5px 20px 5px 20px;
+  padding: 8px 20px 5px 20px;
   box-sizing: content-box;
   background-color: lightgrey;
   text-align: center;
+  border-radius: 6px;
 }
 .nav .dropdown .hidden {
   display: none;
 }
 .nav img {
-  justify-self: center;
-  height: 80px;
-  width: 80px;
-  margin: 0 0 0 20px;
+  height: 75px;
+  width: 75px;
+  margin: 0 0 0 70px;
 }
 .nav .link {
-  margin: 0 40px 15px 20px;
+  margin: 0 35px 15px 10px;
   text-decoration: none;
   color: #2bc1ee;
 }
@@ -157,6 +162,33 @@ body {
 .container .header {
   margin: 30px 0;
 }
+.container .header img {
+  max-width: 100%;
+  margin: 20px 0;
+  border-radius: 6px;
+  border: 0.5px solid black;
+}
 .container .section {
   margin: 30px 0;
+}
+.container footer {
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  padding: 25px 5px 0;
+}
+.container footer img {
+  display: center;
+  height: 76px;
+  width: 80px;
+  margin: 0 60px 0 0;
+  padding: 20px 0 10px 0;
+}
+.container footer h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0 50px 0 0;
+  padding: 0 0 20px 0;
 }
