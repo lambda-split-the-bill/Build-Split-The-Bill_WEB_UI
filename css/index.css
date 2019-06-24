@@ -107,7 +107,6 @@ h2 {
   width: 100%;
   background-color: lightgrey;
   border-bottom: 1px solid black;
-  font-size: 1.55rem;
   font-weight: bold;
 }
 .nav .dropdown {
@@ -133,7 +132,7 @@ h2 {
   text-decoration: none;
   color: #2bc1ee;
   border-bottom: 1px solid black;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 0px 0 20rem 20px;
   padding: 8px 15px 5px 10px;
   box-sizing: content-box;
@@ -149,6 +148,7 @@ h2 {
   margin: 0 1.5rem 1rem 0.5rem;
   text-decoration: none;
   color: #2bc1ee;
+  font-size: 1.5rem;
 }
 @media (max-width: 600px) {
   .nav {
@@ -160,7 +160,7 @@ h2 {
     width: 100%;
     background-color: lightgrey;
     border-bottom: 1px solid black;
-    font-size: 1.55rem;
+    font-size: 1.6rem;
     font-weight: bold;
   }
   .nav .dropdown {
@@ -222,7 +222,7 @@ h2 {
     text-decoration: none;
     color: #2bc1ee;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 .container {
