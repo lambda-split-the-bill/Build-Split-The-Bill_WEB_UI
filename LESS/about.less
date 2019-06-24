@@ -13,7 +13,6 @@
 
 .people-container {
     .flexClass(column);
-    margin: 15px;
 }
 
 .person {
@@ -24,6 +23,7 @@
     margin: 15px 0;
     padding-bottom: 15px;
     border-bottom: 1px solid black;
+    transition: transform 0.7s;
 
     .person-img {
         min-height: 320px;
@@ -71,6 +71,15 @@
     &:nth-child(1) {
         border-top: 1px solid black;
         padding-top: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+
+        @media (max-width: 800px) {
+            transform: none;
+        }
     }
 
 }
