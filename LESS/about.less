@@ -1,0 +1,70 @@
+.about-intro {
+    .flexClass(column);
+    align-items: center;
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+.people-container {
+    .flexClass(column);
+    margin: 15px;
+}
+
+.person {
+    .flexClass(row);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+
+    .person-img {
+        min-height: 320px;
+        min-width: 320px;
+        max-height: 320px;
+        max-width: 320px;
+        border: 1px solid black;
+    }
+
+    .person-content {
+        max-width: 50%;
+        margin: 0 15px;
+
+        h3 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
+
+    @media (max-width: 800px) {
+        flex-direction: column !important;
+        align-items: center;
+
+        .person-content {
+            margin: 15px 0;
+            max-width: 100%;
+        }
+    }
+
+    &:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    &:nth-child(1) {
+        border-top: 1px solid black;
+        padding-top: 15px;
+    }
+
+}
+
+.flexClass(@dir) {
+    display: flex;
+    flex-direction: @dir;
+}
