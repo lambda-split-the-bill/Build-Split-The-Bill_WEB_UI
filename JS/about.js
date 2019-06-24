@@ -27,6 +27,8 @@ class PersonFactory {
 
     constructHTML(data) {
         let container = this.constructElement(this.parent, "div", "", [ "person" ]);
+
+        container.dataset.personId = data.id;
         
         this.constructElement(container, "img", "", ["person-img"]).src = data.img;
 
