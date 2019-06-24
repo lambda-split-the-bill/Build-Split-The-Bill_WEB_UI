@@ -6,6 +6,9 @@
 .about-intro h1 {
   font-size: 4rem;
 }
+.about-intro p {
+  font-size: 1.4rem;
+}
 .people-container {
   display: flex;
   flex-direction: column;
