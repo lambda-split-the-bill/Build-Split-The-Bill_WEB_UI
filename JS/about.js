@@ -34,7 +34,8 @@ class PersonFactory {
 
         let contentDiv = this.constructElement(container, "div", "", ["person-content"]);
 
-        this.constructElement(contentDiv, "h3", data.name, []);
+        let title = this.constructElement(contentDiv, "h3", data.name, []);
+        this.constructElement(title, "h4", data.role, []);
         this.constructElement(contentDiv, "p", data.about, []);
 
         return container;
@@ -53,8 +54,11 @@ class PersonFactory {
 }
 
 const data = [
-    { id: "1", name: "Vincent", img: "", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." },
-    { id: "2", name: "Other", img: "", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." }
+    { id: "1", name: "Sam Ko", role: " - Team Lead", img: "", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." },
+    { id: "2", name: "Vijay Das", role: " - Backend", img: "", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." },
+    { id: "3", name: "Tyler Lippe", role: " - Frontend", img: "", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." },
+    { id: "4", name: "Ryan Wisniewsky", role: " - User Interface", img: "", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." },
+    { id: "5", name: "Vincent Costa", role: " - User Interface", img: "", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." }
 ]
 
 const factory = new PersonFactory(data);
