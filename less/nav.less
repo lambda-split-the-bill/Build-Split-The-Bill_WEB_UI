@@ -47,10 +47,23 @@
     }
 
     .link{
-        margin: 0 1.5rem 1rem .5rem;
+        margin: 0px 25px 0px 20px;
         text-decoration: none;
-        color:@fontColor;
-        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+        font-size: 1.2rem;
+        background-color: @fontColor;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-family: 'Roboto';
+        font-weight: 100;
+
+        transition: border-radius 0.7s, background-color 0.7s;
+
+        &:hover {
+            background-color: darken(@fontColor, 10%);
+            border-radius: 15px;
+        }
     }
     
 }
@@ -59,7 +72,7 @@
         .flexBox(row nowrap, space-between, center);
         padding: 10px 0;
         width: 100%;
-        background-color: @bg-color;
+        background-color: white;
         border-bottom: 1px solid black;
         font-size: 1.6rem;
         font-weight: bold;
@@ -124,9 +137,14 @@
             .link{
                 margin: 0px 25px 0px 20px;
                 text-decoration: none;
-                color:@fontColor;
+                color: white;
                 text-align: center;
                 font-size: 1.4rem;
+                background-color: @fontColor;
+                padding: 15px;
+                border-radius: 15px;
+
+                
             }
         }
     }
