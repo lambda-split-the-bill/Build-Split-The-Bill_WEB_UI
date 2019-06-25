@@ -296,7 +296,7 @@ h2 {
 .nav img {
   height: 75px;
   width: 75px;
-  margin: 0 0 0 100px;
+  margin: 0 0 0 33px;
   z-index: 3;
 }
 .nav .link {
@@ -374,7 +374,7 @@ h2 {
   .nav .logo {
     height: 75px;
     width: 75px;
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 4rem;
   }
   .nav nav {
     display: flex;
@@ -444,6 +444,10 @@ h2 {
   margin: 0 7.5rem 0 0;
   padding: 0 0 20px 0;
 }
+.container footer h3 a {
+  text-decoration: none;
+  color: black;
+}
 @media (max-width: 600px) {
   .container footer {
     margin: 0;
@@ -452,13 +456,13 @@ h2 {
     display: center;
     height: 76px;
     width: 80px;
-    margin: 0;
+    margin: 0 2rem 0 0;
     padding: 0;
   }
   .container footer h3 {
     font-size: 1.6rem;
     font-weight: bold;
-    margin: 0;
+    margin: 0 2rem 0 0;
     padding: 0;
     text-align: center;
   }
