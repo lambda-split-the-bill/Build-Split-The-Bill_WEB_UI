@@ -1,5 +1,6 @@
 body {
-  background-color: white !important;
+  background-color: lightgrey !important;
+  overflow-x: hidden;
 }
 * {
   font-family: 'Roboto', sans-serif !important;
