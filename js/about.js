@@ -36,6 +36,9 @@ class PersonFactory {
 
         let title = this.constructElement(contentDiv, "h3", data.name, []);
         this.constructElement(title, "h4", data.role, []);
+        this.constructElement(title, "i", "", ["fab", "fa-github"]);
+        this.constructElement(title, "i", "", ["fab", "fa-linkedin"]);
+
         this.constructElement(contentDiv, "p", data.about, []);
 
         return container;
@@ -56,11 +59,11 @@ class PersonFactory {
 }
 
 const data = [
-    { id: "1", name: "Sam Ko", role: " - Team Lead", img: "", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." },
-    { id: "2", name: "Vijay Das", role: " - Backend", img: "", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." },
-    { id: "3", name: "Tyler Lippe", role: " - Frontend", img: "", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." },
-    { id: "4", name: "Ryan Wisniewski", role: " - User Interface", img: "", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." },
-    { id: "5", name: "Vincent Costa", role: " - User Interface", img: "", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." }
+    { id: "1", name: "Sam Ko", role: " - Team Lead", img: "./img/SamKo_square.jpg", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." },
+    { id: "2", name: "Vijay Das", role: " - Backend", img: "./img/VijayD_square.jpg", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." },
+    { id: "3", name: "Tyler Lippe", role: " - Frontend", img: "./img/Tyler.jpg", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." },
+    { id: "4", name: "Ryan Wisniewski", role: " - User Interface", img: "./img/RyanW_square.jpg", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." },
+    { id: "5", name: "Vincent Costa", role: " - User Interface", img: "./img/VincentC.jpg", about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem repudiandae aliquid debitis obcaecati voluptas quos animi provident ipsam? Voluptates natus quasi mollitia illo ipsum, quis deserunt dolor aliquam quod." }
 ]
 
 const factory = new PersonFactory(data);
