@@ -455,6 +455,10 @@ h2 {
   margin: 0 7.5rem 0 0;
   padding: 0 0 20px 0;
 }
+.container footer h3 a {
+  text-decoration: none;
+  color: black;
+}
 @media (max-width: 600px) {
   .container footer {
     margin: 0;
@@ -463,13 +467,13 @@ h2 {
     display: center;
     height: 76px;
     width: 80px;
-    margin: 0;
+    margin: 0 2rem 0 0;
     padding: 0;
   }
   .container footer h3 {
     font-size: 1.6rem;
     font-weight: bold;
-    margin: 0;
+    margin: 0 2rem 0 0;
     padding: 0;
     text-align: center;
   }
