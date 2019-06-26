@@ -260,9 +260,6 @@ h2 {
   right: 0;
   left: 0;
 }
-.nav .logo {
-  animation: logo-spin 3s 3;
-}
 .nav .link {
   margin: 0px 25px 0px 20px;
   text-decoration: none;
@@ -396,7 +393,6 @@ h2 {
   height: 76px;
   width: 80px;
   padding: 10px 0 10px 0;
-  animation: logo-spin 3s 3;
 }
 .container footer h3 {
   font-size: 1.6rem;
