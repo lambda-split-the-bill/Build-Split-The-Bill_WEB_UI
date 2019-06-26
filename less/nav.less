@@ -1,10 +1,11 @@
 .nav{   
     .flexBox(row nowrap, space-between, center);
-    padding: 5px 0;
     width: 100%;
-    background-color: @bg-color;
-    border-bottom: 1px solid black;
-    font-weight: bold;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 20px 0;
     
     .dropdown{
         z-index: 2;
@@ -27,13 +28,11 @@
 
             a{
                 text-decoration: none;
-                color:@fontColor;
-                border-bottom: 1px solid black;
+                color: black;
                 font-size: 1.5rem;
                 margin: 0px 0 20rem 20px;
                 padding:8px 15px 5px 10px;
                 box-sizing: content-box;
-                background-color: @bg-color;
 
             }
         }
@@ -42,8 +41,11 @@
     img{
         height: 75px;
         width: 75px;
-        margin: 0 0 0 100px;
         z-index:3;
+        position: absolute;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
     }
 
     .link{
@@ -72,7 +74,6 @@
 @media (max-width: 600px){
     .nav{   
         .flexBox(row nowrap, space-between, center);
-        padding: 10px 0;
         width: 100%;
         background-color: white;
         border-bottom: 1px solid black;
@@ -93,7 +94,7 @@
 
             
             .img-class{
-                margin: 2.5rem 0 0 10px; 
+                margin-left: 15px; 
                 height: 40px;
                 width: 40px;
             } 
@@ -104,7 +105,7 @@
                 text-decoration: none;
                 position: absolute;
                 width:8%;
-                margin: 0 0 0 2.2rem; 
+                margin: 55px 0 0 2.2rem; 
 
                 a{
                     text-decoration: none;
@@ -126,25 +127,11 @@
             }
         }
 
-        .logo{
-            height: 75px;
-            width: 75px;
-            margin: 0 0 0 3rem;
-        }
-
         nav{
             .flexBox(column, center, center);
             margin: 0px 0px 0px 0px;
 
-            .link{
-                margin: 0px 25px 0px 20px;
-                text-decoration: none;
-                color: white;
-                text-align: center;
-                font-size: 1.4rem;
-                background-color: @fontColor;
-                padding: 15px;
-                border-radius: 15px;
+            .link {
 
                 @media @mobile {
                     font-size: 1rem;

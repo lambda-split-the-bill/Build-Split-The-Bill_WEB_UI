@@ -26,7 +26,7 @@ class PersonFactory {
     }
 
     constructHTML(data) {
-        let container = this.constructElement(this.parent, "div", "", [ "person" ]);
+        let container = this.constructElement(this.parent, "div", "", [ "person", "hide-me" ]);
 
         container.dataset.personId = data.id;
         
@@ -48,8 +48,6 @@ class PersonFactory {
         let element = document.createElement(type);
         parent.appendChild(element);
 
-        console.log(data);
-
         if(data && data !== "") element.textContent = data;
 
         classes.forEach(cssClass => element.classList.add(cssClass));
@@ -67,3 +65,27 @@ const data = [
 ]
 
 const factory = new PersonFactory(data);
+
+$(document).ready(function() {
+    console.log("loaded")
+    
+    /* Every time the window is scrolled ... */
+    $(document).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.hide-me').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - 325;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+            }
+            
+        }); 
+    
+    });
+    
+});
