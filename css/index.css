@@ -257,9 +257,6 @@ h2 {
   right: 0;
   left: 0;
 }
-.nav .logo {
-  animation: logo-spin 3s 3;
-}
 .nav .link {
   margin: 0px 25px 0px 20px;
   text-decoration: none;
