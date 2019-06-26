@@ -32,10 +32,10 @@ class PersonFactory {
         
         this.constructElement(container, "img", "", ["person-img"]).src = data.img;
 
-        let contentDiv = this.constructElement(container, "div", "", ["person-content"]);
+        let contentDiv = this.constructElement(container, "section", "", ["person-content"]);
 
-        let title = this.constructElement(contentDiv, "h3", data.name, []);
-        this.constructElement(title, "h4", data.role, []);
+        let title = this.constructElement(contentDiv, "h2", data.name, []);
+        this.constructElement(title, "h3", data.role, []);
         this.constructElement(title, "i", "", ["fab", "fa-github"]);
         this.constructElement(title, "i", "", ["fab", "fa-linkedin"]);
 
@@ -67,18 +67,14 @@ const data = [
 const factory = new PersonFactory(data);
 
 $(document).ready(function() {
-    console.log("loaded")
     
-    /* Every time the window is scrolled ... */
     $(document).scroll( function(){
 
-        /* Check the location of each desired element */
         $('.hide-me').each( function(i){
             
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - 325;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            let bottom_of_object = $(this).offset().top + $(this).outerHeight() - 325;
+            let bottom_of_window = $(window).scrollTop() + $(window).height();
             
-            /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
                 
                 $(this).animate({'opacity':'1'},500);
