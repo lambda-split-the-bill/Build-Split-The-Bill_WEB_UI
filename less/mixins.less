@@ -1,0 +1,13 @@
+//Mixins here
+
+.flexBox(@direction, @justify, @align){
+    display: flex;
+    flex-flow: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button(@bg-color, @border){
+    border-bottom: 2px solid @bg-color;
+    background-color: @border;
+}
