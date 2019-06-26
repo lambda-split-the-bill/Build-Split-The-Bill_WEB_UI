@@ -6,6 +6,8 @@
     top: 0;
     z-index: 100;
     padding: 20px 0;
+    background-color: @bg-color;
+    border-bottom: 1px solid black;
     
     .dropdown{
         z-index: 2;
@@ -43,7 +45,11 @@
         position: absolute;
         margin: 0 auto;
         right: 0;
-        left: 0;
+        left: 0; 
+    }
+
+    .logo{
+        animation: logo-spin 3s 3; 
     }
 
     .link{
@@ -73,10 +79,11 @@
     .nav{   
         .flexBox(row nowrap, space-between, center);
         width: 100%;
-        background-color: white;
+        background-color: lightgrey;
         border-bottom: 1px solid black;
         font-size: 1.6rem;
         font-weight: bold;
+        border-bottom: 1px solid black;
         
         .dropdown{
             z-index: 2;
