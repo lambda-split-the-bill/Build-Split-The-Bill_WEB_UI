@@ -26,16 +26,16 @@ class PersonFactory {
     }
 
     constructHTML(data) {
-        let container = this.constructElement(this.parent, "div", "", [ "person" ]);
+        let container = this.constructElement(this.parent, "div", "", [ "person", "hide-me" ]);
 
         container.dataset.personId = data.id;
         
         this.constructElement(container, "img", "", ["person-img"]).src = data.img;
 
-        let contentDiv = this.constructElement(container, "div", "", ["person-content"]);
+        let contentDiv = this.constructElement(container, "section", "", ["person-content"]);
 
-        let title = this.constructElement(contentDiv, "h3", data.name, []);
-        this.constructElement(title, "h4", data.role, []);
+        let title = this.constructElement(contentDiv, "h2", data.name, []);
+        this.constructElement(title, "h3", data.role, []);
         this.constructElement(title, "i", "", ["fab", "fa-github"]);
         this.constructElement(title, "i", "", ["fab", "fa-linkedin"]);
 
@@ -47,8 +47,6 @@ class PersonFactory {
     constructElement(parent, type, data, classes) {
         let element = document.createElement(type);
         parent.appendChild(element);
-
-        console.log(data);
 
         if(data && data !== "") element.textContent = data;
 
@@ -67,3 +65,23 @@ const data = [
 ]
 
 const factory = new PersonFactory(data);
+
+$(document).ready(function() {
+    
+    $(document).scroll( function(){
+
+        $('.hide-me').each( function(i){
+            
+            let bottom_of_object = $(this).offset().top + $(this).outerHeight() - 325;
+            let bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+            }
+            
+        }); 
+    
+    });
+    
+});
