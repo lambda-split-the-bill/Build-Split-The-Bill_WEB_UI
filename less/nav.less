@@ -24,14 +24,18 @@
             width:8%;
             margin: 0 0px 20rem 5rem; 
 
-            a{
+            a {
                 text-decoration: none;
                 color: @logo-color;
                 font-size: 1.5rem;
                 margin: 0px 0 20rem 20px;
                 padding:8px 15px 5px 10px;
                 box-sizing: content-box;
+                transition: color 0.7s;
 
+                &:hover {
+                    color: darken(@logo-color, 10%);
+                }
             }
         }
     }
@@ -65,7 +69,7 @@
         transition: border-radius 0.7s, background-color 0.7s;
 
         &:hover {
-            background-color: darken(@fontColor, 10%);
+            background-color: darken(@logo-color, 10%);
             border-radius: 15px;
         }
 

@@ -218,7 +218,6 @@ h2 {
   top: 0;
   z-index: 100;
   padding: 20px 0;
-  background-color: lightgrey;
   border-bottom: 1px solid black;
 }
 .nav .dropdown {
@@ -247,6 +246,10 @@ h2 {
   margin: 0px 0 20rem 20px;
   padding: 8px 15px 5px 10px;
   box-sizing: content-box;
+  transition: color 0.7s;
+}
+.nav .dropdown .dropdown-items a:hover {
+  color: #ffb005;
 }
 .nav img {
   height: 75px;
@@ -274,7 +277,7 @@ h2 {
   transition: border-radius 0.7s, background-color 0.7s;
 }
 .nav .link:hover {
-  background-color: #000000;
+  background-color: #ffb005;
   border-radius: 15px;
 }
 @media (max-width: 600px) {
